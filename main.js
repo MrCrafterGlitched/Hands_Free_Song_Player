@@ -23,12 +23,14 @@ function model_loaded() {
 }
 function play() {
     Song.play()
+    document.getElementById("holder").innerHTML="Harry Potter Theme Remix"
 }
 function pause() {
     Song.pause()
 }
 function stop() {
     Song.stop()
+    document.getElementById("holder").innerHTML="Song has been stopped."
 }
 function getPoses(Results) {
     if (Results.length>0) {
@@ -53,7 +55,7 @@ function draw() {
         Song.stop()
         if (Song1.isPlaying()==false) {
             Song1.play()
-            document.getElementById("holder").innerHTML="Playing Song 1"
+            document.getElementById("holder").innerHTML="Peter Pan"
         }
         
     }
@@ -62,7 +64,7 @@ function draw() {
         Song1.stop()
         if (Song.isPlaying()==false) {
             Song.play()
-            document.getElementById("holder").innerHTML="Playing Song 2"
+            document.getElementById("holder").innerHTML="Harry Potter Theme Remix"
         }
         
     }
